@@ -1,0 +1,54 @@
+# ==============================================================================
+# EduTracker - Git Ignore Configuration
+# Prevents sensitive credentials, dependency bundles, and uploads from committing
+# ==============================================================================
+
+# Environment files and credentials
+.env
+.env.*
+*.env
+server/.env
+!server/.env.example
+
+# Database dumps and SQL exports (contains real student records and sensitive data)
+datadabse.sql
+*.sql
+!database/edutracker.sql
+
+# Node dependencies
+node_modules/
+server/node_modules/
+package-lock.json
+!server/package-lock.json
+
+# Uploaded assignment documents (ignore all student submissions / PDFs)
+server/uploads/assignments/*
+!server/uploads/assignments/.gitkeep
+
+# System & runtime logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor folders
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Database exports
+*.sql
+*.sql.gz
+*.dump
+*.bak
+
+# Archives
+*.zip
+*.rar

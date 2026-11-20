@@ -1,0 +1,28 @@
+{
+  "name": "edutracker-server",
+  "version": "1.0.0",
+  "description": "EduTracker Express.js API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "create-admin": "node create-admin.js",
+    "test-email": "node testEmail.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^5.3.0",
+    "mongodb": "^7.9.0",
+    "multer": "^2.5.0",
+    "node-cron": "^4.6.0",
+    "nodemailer": "^10.2.1"
+  },
+  "allowScripts": {
+    "bcrypt@6.0.0": true
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

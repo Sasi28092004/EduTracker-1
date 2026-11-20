@@ -1,0 +1,12 @@
+.git
+.gitignore
+.vscode
+.env
+.env.*
+**/.env
+server/node_modules
+server/uploads/assignments/*.pdf
+deployment
+database
+*.log
+README.md
